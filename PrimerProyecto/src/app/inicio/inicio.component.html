@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+</head>
+<body>
+    <p>
+        <mat-toolbar color="primary">
+          <span>Inicio</span>
+          <mat-icon matBadge="22" matBadgeColor="accent" color="p">
+            home
+          </mat-icon>
+
+          
+        </mat-toolbar>
+      </p>
+      <div class="homepage">
+        <header>
+          <h1>Bienvenido a Mi Aplicación con Angular </h1>
+          <p>Explora todo lo que tenemos para ofrecer sobre los videojuegos .</p>
+        </header>
+        <main>
+          <section class="feature">
+            <h2>Consola</h2>
+            <img src="assets/AN_1.png" width="300" height="400" alt="Descripción de la imagen 1">
+          </section>
+          <section class="feature">
+            <h2>PC</h2>
+            <img src="assets/AN_2.png" width="300" height="400" alt="Descripción de la imagen 1">
+          </section>
+        </main>
+        <footer>
+          <p>&copy; 2023 Mi Aplicación. Todos los derechos reservados y protegidos Por la Ut.</p>
+        </footer>
+      </div>
+      <mat-tab-group>
+        <mat-tab label="Actualizacion Anterior">
+          <ng-template matTabContent>
+            <h2>Version de PPGAME 12.12.1</h2>
+          </ng-template>
+        </mat-tab>
+        <mat-tab label="Actualizacion Reciente">
+          <ng-template matTabContent>
+            <h2>new Version 13.00.10</h2>
+          </ng-template>
+        </mat-tab>
+      </mat-tab-group>
+    
+    
+</body>
+</html>

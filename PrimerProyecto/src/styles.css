@@ -1,0 +1,9 @@
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body {
+    background-image: url('assets/FONDO.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
