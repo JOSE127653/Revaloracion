@@ -14,7 +14,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
-
+import { MenuComponent } from './menu/menu.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -22,7 +24,8 @@ const appRoutes: Routes=[
 
   {path:'inicio',component:InicioComponent},
   {path:'nosotros',component:NosotrosComponent},
-  {path:'login',component:LoginComponent}
+  {path:'login',component:LoginComponent},
+  {path:'Menu',component:MenuComponent}
 ]
 
 
@@ -31,7 +34,8 @@ const appRoutes: Routes=[
     AppComponent,
     InicioComponent,
     NosotrosComponent,
-    LoginComponent
+    LoginComponent,
+    MenuComponent
   ],
   imports: [ 
     RouterModule.forRoot(
@@ -42,7 +46,7 @@ const appRoutes: Routes=[
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule, MatButtonModule,MatToolbarModule,MatTabsModule
+    MatIconModule, MatButtonModule,MatToolbarModule,MatTabsModule,MatSidenavModule,MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
