@@ -17,7 +17,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { MenuComponent } from './menu/menu.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-
+import { TablaComponent } from './tabla/tabla.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 const appRoutes: Routes=[
@@ -25,7 +26,8 @@ const appRoutes: Routes=[
   {path:'inicio',component:InicioComponent},
   {path:'nosotros',component:NosotrosComponent},
   {path:'login',component:LoginComponent},
-  {path:'Menu',component:MenuComponent}
+  {path:'Menu',component:MenuComponent},
+  {path:'Tabla',component:TablaComponent}
 ]
 
 
@@ -35,7 +37,8 @@ const appRoutes: Routes=[
     InicioComponent,
     NosotrosComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    TablaComponent
   ],
   imports: [ 
     RouterModule.forRoot(
@@ -46,7 +49,7 @@ const appRoutes: Routes=[
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule, MatButtonModule,MatToolbarModule,MatTabsModule,MatSidenavModule,MatListModule
+    MatIconModule, MatButtonModule,MatToolbarModule,MatTabsModule,MatSidenavModule,MatListModule,MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
