@@ -49,7 +49,13 @@ const appRoutes: Routes=[
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule, MatButtonModule,MatToolbarModule,MatTabsModule,MatSidenavModule,MatListModule,MatTableModule
+    MatIconModule,
+     MatButtonModule,
+     MatToolbarModule,
+     MatTabsModule,
+     MatSidenavModule,
+     MatListModule,
+     MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
