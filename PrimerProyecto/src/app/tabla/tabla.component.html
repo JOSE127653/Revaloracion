@@ -1,5 +1,27 @@
 <p>tabla works!</p>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" class="sidenav">
+   
 
+    <mat-nav-list class ="lista">
+      <a mat-list-item href="http://localhost:4200/inicio">Inicio</a>
+      <a mat-list-item href="http://localhost:4200/nosotros">Nosotros </a>
+      <a mat-list-item href="http://localhost:4200/Menu">Menu</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <span>Menú </span>
+    </mat-toolbar>
+
+    <button class="btn success" style="margin-left: 45%;background-color: #9f0ee2; color: #ffffff; border: none; padding: 10px 20px; cursor: pointer;" (click)="openPopup()"> INSERTAR </button>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   

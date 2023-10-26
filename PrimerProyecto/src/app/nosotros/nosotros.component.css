@@ -86,6 +86,39 @@ img {
     max-width: 100%;
     height: auto;
 }
+/*------------menu------*/
+.sidenav-container {
+  height: 100%;
+  background-color: #1ee028; 
+}
 
+.sidenav {
+  width: 250px;
+  background-color: #21aa28b4; 
+  color: rgb(192, 17, 17); 
+}
+
+.content {
+  padding: 20px;
+  background-color: #c2dd28; 
+}
+
+.mat-list-item {
+  cursor: pointer;
+  background-color: #c22222; 
+}
+
+.mat-sidenav-container {
+  position: inherit;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #b81212; 
+}
+.lista{
+  height: 100%;
+  width: 150px;
+}
   
   

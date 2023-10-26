@@ -1,21 +1,29 @@
 
-<!DOCTYPE html>
-<html>
-
-<head>
-  
-</head>
 <body>
-    <p>
-        <mat-toolbar color="primary">
-          <span>Inicio</span>
-          <mat-icon matBadge="22" matBadgeColor="accent" color="p">
-            home
-          </mat-icon>
+  
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="over" class="sidenav">
+     
 
-          
-        </mat-toolbar>
-      </p>
+      <mat-nav-list class ="lista">
+        <a mat-list-item href="http://localhost:4200/Menu">Menu</a>
+        <a mat-list-item href="http://localhost:4200/nosotros">Nosotros </a>
+        <a mat-list-item href="http://localhost:4200/Tabla">Tabla</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+      <mat-toolbar color="primary">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+
+        <span>Menú </span>
+      </mat-toolbar>
+    
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
       <div class="homepage">
         <header>
           <h1>Bienvenido a Mi Aplicación con Angular </h1>
@@ -50,4 +58,3 @@
     
     
 </body>
-</html>
